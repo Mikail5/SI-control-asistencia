@@ -1,0 +1,272 @@
+body{
+    margin:0px;
+    background:white;
+    font-family: Verdana;
+}
+.barrapad{
+    display:flex;
+    background: #16A085;
+}
+
+.barra{
+    margin: 0;
+    width:30%;
+    display:flex;
+    align-items: center;
+}
+.barra2{
+    width: 70%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.barraop
+{
+    width: 90%;
+    height: 50px;
+    display:flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+.menucon
+{
+    height: 50px;
+    width: auto;
+}
+#bot-menu
+{
+    display: none;
+}
+.barrapad label
+{
+    display: none;
+    width: 50px;
+}
+.barrapad label:hover
+{
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.logo{
+    margin-left: 20px;
+    height: 50px;
+    width: auto;
+}
+
+#botones2{
+    margin-right:10px;
+    outline:none;
+    color: #FFF;
+    text-decoration: none;
+    border-bottom: solid #DCDCDC 2px;
+    padding: 15px 30px;
+    font-family: CopaAmerica,sans-serif;
+    font-size: 15px;
+    transition: 0.2s;
+}
+#botones2:hover{
+    border-bottom: solid #FFF 4px;
+}
+#botones2:active{
+    border: inset #52BE80 4px;
+}
+
+#botones3{
+	margin-right:10px;
+	outline:none;
+	color: #FFF;
+	text-decoration: none;
+  	border-bottom: solid #2980B9 2px;
+	padding: 15px 30px;
+    font-family: Arial,sans-serif;
+    font-size: 15px;
+	transition: 0.2s;
+}
+
+#botones3:hover{
+  	border-bottom: solid #3498DB 4px;
+}
+#botones3:active{
+  	border: inset #52BE80 4px;
+}
+
+body h1
+{
+	font-family: 'Poppins', sans-serif;
+	color: #ed6973;
+	text-align: center;
+}
+body h2
+{
+	font-family: 'Poppins', sans-serif;
+	background: linear-gradient(yellow,#ffffaa);
+	-webkit-background-clip: text;
+	color: transparent;
+}
+footer h3
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+.es{
+	background: linear-gradient(yellow,#ffffaa);
+	-webkit-background-clip: text;
+	color: transparent;
+	text-align: center;
+}
+
+ul
+{
+	margin: 40px;
+	text-decoration:none;
+	color: white;
+	text-align: center;
+}
+a
+{
+	text-decoration:none;
+	color: white;
+}
+#conpad
+{
+	background-image: url("img/cabreg.png");
+	background-size: cover;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.conpap
+{
+	background: -webkit-linear-gradient(#B2DFDB,#E0F2F1);
+	background-image: no-repeat;
+	padding: 10px;
+	width: 420px;
+	border: 10px inset #00BFA5;
+	border-radius: 5px;
+	text-align: center;
+	margin: 20px 0px;
+}
+.orgins
+{
+	text-align: left;
+	line-height: 62px; 
+}
+
+*{
+	font-family: 'Poppins', sans-serif;
+}
+
+#de{
+	width: 400px;
+	border-radius: 10px;
+    border-color: #6b8bff;
+    font-family: sans-serif;
+	padding: 8px;
+  	border: #6b8bff 3px solid;
+  	outline: none;
+}
+#de:focus
+{
+	border: solid #9db2ff 3px;
+}
+
+.regis{
+    outline:none;
+    color: #FFF;
+    text-decoration: none;
+    background: #FF6D00;
+    border: solid #FF6D00 2px;
+    border-radius: 5px;
+    padding: 10px 40px;
+    font-family:CopaAmerica,sans-serif;
+    font-size: 15px;
+    transition:0.5s;
+}
+.regis:hover{
+    background: #FF9800;
+    border: solid #FF9800 2px;
+    border-radius: 30px;
+    transition:0.5s;
+    cursor: pointer;
+}
+.regis:active{
+  border: inset #F57C00 2px;
+}
+
+ul a{
+	margin: 40px;
+	text-decoration:none;
+	color: white;
+}
+
+ .title{
+ 	background: linear-gradient(#304FFE,#8C9EFF);
+ 	-webkit-background-clip: text;
+ 	color: transparent;
+ }
+
+footer
+{
+    font-family: Verdana;
+    border-color: gray;
+    text-align: center;
+    color:black;
+    font-size: 12px;
+}
+/*---------------------------------------------*/
+@media(max-width: 770px)
+{
+    .barrapad label
+    {
+        display: block;
+        align-self: flex-end;
+    }
+    .barraop
+    {
+        position: absolute;
+        justify-content: stretch;
+        flex-grow: 0;
+        flex-direction: column;
+        background: #16A085;
+        margin-top: -75px;
+        height: auto;
+        width: 150px;
+        transition: all 0.2s;
+    }
+    #botones2
+    {
+        border-bottom: none;
+        border-top: 1px solid #FFF; 
+        margin: 0;
+    }
+    #botones2:hover{
+        background-color: rgba(255,255,255,0.4);
+        border-bottom: none;
+    }
+    #botones3
+    {
+        border-bottom: none;
+        border-top: 1px solid #FFF;
+        margin: 0;
+    }
+    #botones3:hover{
+        background-color: rgba(255,255,255,0.4);
+        border-bottom: none;
+    }
+    #bot-menu:checked ~ .barraop
+    {
+        margin-top: 75px;
+    }
+}
+
+@media (max-width: 480px){
+    .conpap
+    {
+        width: 100%;
+    }
+    #de{
+        width: 92%;
+    }
+}

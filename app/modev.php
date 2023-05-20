@@ -1,0 +1,98 @@
+<?php
+	/*session_start();
+	include('funciones.php');
+	verificar_sesion();*/
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Editar Productos</title>
+    <link rel="stylesheet" href="css/esteev.css">
+  </head>
+  <body>
+      <div class="barrapad">
+        <div class="barra">
+          <img class="logo" src="css/img/logo.png">
+        </div>
+        <div class="barra2">
+          <input type="checkbox" id="bot-menu">
+          <label for="bot-menu"><img class="menucon" src="css/img/menico.png"></label>
+          <nav class="barraop">
+            <a id="botones" href="instructor.php">Inicio</a>
+            <a id="botones" href="usua.php">Usuarios</a>
+            <a id="botones" href="asiste.php">Asistencias</a>
+            <a id="botones" href="evin.php">Evidencia</a>
+            <a id="botones" href="cerrar.php">Cerrar sesión</a>
+          </nav>
+        </div>
+      </div>
+      <div id="conpad">
+        <div id="menop">
+          <h2>Opciones</h2>
+            <a id="botones2" href="regev.php">Registrar evidencia</a>
+            <a id="botones2" href="modev.php">Editar estados</a>
+            <a id="botones2" href="conev.php">Buscar usuario</a>
+            <a id="botones2" href="delev.php">Eliminar regsitros</a>
+        </div>
+
+        <div class="form">
+          <h3>Actualizar asistencias de aprendiz</h3>
+          <form action="" method="POST">
+            <p>
+              <input type="text" name="ida" required placeholder="Id acumulación">
+              <input type="text" name="doca" required placeholder="Doc aprendiz">
+            </p>
+            <p>
+              <input class="fallre" type="text" name="fall" required placeholder="Fallas">
+              <input class="fallre" type="text" name="ret" required placeholder="Retardos">
+            </p>
+            <p>
+              <input class="a" type="submit" name="regis" value="Actualizar">
+            </p>
+          </form>
+            <!--<?php
+            if(isset($_POST['actu']))
+            {
+              include("conexion.php");
+              $idp=$_POST['idpro'];
+              $nom=$_POST['nom'];
+              $tip=$_POST['tip'];
+              $pren=$_POST['pre'];
+              $pres=$_POST['pres'];
+              $can=$_POST['can'];
+              $exis=0;
+              $res=mysqli_query($conexion,"SELECT * FROM productos WHERE IdProd='$idp'");
+              while($consul=mysqli_fetch_array($res))
+              {
+                $exis++;
+              }
+              if($exis==0)
+              {
+                echo"<h2>El producto no existe</h2>";
+              }
+              else
+              {
+                mysqli_query($conexion,"UPDATE productos SET
+                IdProd='$idp',
+                NomProd='$nom',
+                TipoProd='$tip',
+                PrecEnt='$pren',
+                PrecSal='$pres',
+                Cant='$can'
+                WHERE IdProd='$idp'");
+                echo'<script>
+                alert("Producto modificado correctamente");
+                </script>';
+                header("Refresh:0; url=productos.php");
+              }
+            }
+          ?>-->
+        </div>
+    </div>
+    <footer>
+      <hr>
+      <h4>SENA© 2019 Todos los derechos reservados</h4>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<?php
+	session_start();
+	include('funciones.php');
+	verificar_sesion();
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registrar Productos</title>
+    <link rel="stylesheet" type="text/css" href="css/estras.css">
+  </head>
+  <body>
+      <div class="barrapad">
+        <div class="barra">
+          <img class="logo" src="css/img/logo.png">
+        </div>
+        <div class="barra2">
+          <input type="checkbox" id="bot-menu">
+          <label for="bot-menu"><img class="menucon" src="css/img/menico.png"></label>
+          <nav class="barraop">
+            <a id="botones" href="instructor.html">Inicio</a>
+            <a id="botones" href="usua.html">Usuarios</a>
+            <a id="botones" href="asiste.html">Asistencias</a>
+            <a id="botones" href="evin.html">Evidencia</a>
+            <a id="botones" href="cerrar.php">Cerrar sesión</a>
+          </nav>
+        </div>
+      </div>
+      <div id="conpad">
+        <div id="menop">
+          <h2>Opciones</h2>
+            <a id="botones2" href="regas.html">Tomar asistencia</a>
+            <a id="botones2" href="modas.html">Editar registros</a>
+            <a id="botones2" href="conas.html">Buscar asistencia</a>
+            <a id="botones2" href="delas.html">Eliminar registros</a>
+        </div>
+        <div class="form">
+          <h3>Registrar Asistencia</h3>
+          <form action="" method="POST">
+              <input type="text" name="nom" required placeholder="Doc. instructor">
+              <table border="2" width="100%">
+                <tr>
+                  <td><input class="iden" type="text" name="nom" required placeholder="Aprendiz"></td>
+                  <td><input class="iden" type="time" name="tip" required value="10:30"></td>
+                </tr>
+              </table>
+              <input class="a" type="submit" name="regis" value="Registrar">
+          </form>
+        </div>
+    <!--<?php
+      include("conexion.php");
+      if(isset($_POST['regis']))
+      {
+        $nom=$_POST['nom'];
+        $tip=$_POST['tip'];
+        $pren=$_POST['pre'];
+        $pres=$_POST['pres'];
+        $can=$_POST['can'];
+        $exis=0;
+
+        $resu=mysqli_query($conexion,"SELECT * FROM productos WHERE NomProd='$nom' AND TipoProd='$tip' AND PrecEnt='$pren' AND PrecSal='$pres' AND Cant='$can'");
+        while($consulta=mysqli_fetch_array($resu))
+        {
+          $exis=$exis+1;
+        }
+        if($exis>0)
+        {
+          echo"<h3>El producto ya está registrado</h3>";
+        }
+        else
+        {
+          $datos=mysqli_query($conexion,"INSERT INTO productos (NomProd,TipoProd,PrecEnt,PrecSal,Cant) VALUES('$nom','$tip','$pren','$pres','$can')");
+
+          if($datos)
+          {
+            header('Location: productos.php');
+          }
+          else
+          {
+            echo "error";
+          }
+        }
+      }
+    ?>-->
+  </div>
+  <footer>
+      <hr>
+      <h4>SENA© 2019 Todos los derechos reservados</h4>
+  </footer>
+</body>
+</html>

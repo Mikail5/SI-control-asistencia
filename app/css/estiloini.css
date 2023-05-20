@@ -1,0 +1,233 @@
+body{
+    margin:0px;
+    background:white;
+    font-family: Verdana;
+}
+.barrapad{
+    display:flex;
+    background: #16A085;
+}
+
+.barra{
+    margin: 0;
+    width:30%;
+    display:flex;
+    align-items: center;
+}
+.barra2{
+    width: 70%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.barraop
+{
+    width: 90%;
+    height: 50px;
+    display:flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+.menucon
+{
+    height: 50px;
+    width: auto;
+}
+#bot-menu
+{
+    display: none;
+}
+.barrapad label
+{
+    display: none;
+    width: 50px;
+}
+.barrapad label:hover
+{
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.logo{
+    margin-left: 20px;
+    height: 50px;
+    width: auto;
+}
+
+#botones3{
+    margin-right:10px;
+    outline:none;
+    color: #FFF;
+    text-decoration: none;
+    border-bottom: solid #F1C40F 2px;
+    padding: 15px 30px;
+    font-family:CopaAmerica,sans-serif;
+    font-size: 15px;
+    transition:0.2s;
+}
+#botones3:hover{
+    border-bottom: solid #FFEA00 4px;
+}
+#botones3:active{
+  border: inset #52BE80 4px;
+}
+
+#bot{
+    margin-right:10px;
+    outline:none;
+    color: #FFF;
+    text-decoration: none;
+    border-bottom: solid #DCDCDC 2px;
+    padding: 15px 30px;
+    font-family: CopaAmerica,sans-serif;
+    font-size: 15px;
+    transition: 0.2s;
+}
+#bot:hover{
+    border-bottom: solid #FFF 4px;
+}
+#bot:active{
+    border: inset #52BE80 4px;
+}
+
+#botones2{
+    margin: 20px 90px;
+    outline:none;
+    color: #FFF;
+    text-decoration: none;
+    background: #00C853;
+    border: solid #00C853 2px;
+    border-radius: 5px;
+    width: 160px;
+    font-family:CopaAmerica,sans-serif;
+    font-size: 15px;
+    transition: 0.2s;
+}
+#botones2:hover{
+    background: #69F0AE;
+    transition: 0.2s;
+    border: solid #69F0AE 2px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#botones2:active{
+    border: inset #43A047 2px;
+}
+
+#conpadi
+{
+    background-image: url("img/backg.jpg");
+    background-image: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    background: -webkit-linear-gradient(#f1c40f,#ffeaa7);
+    box-sizing: border-box;
+    border: 10px inset #00B8D4;
+    border-radius: 5px;
+    margin: auto;
+}
+
+form input 
+{   
+    width: 250px;
+    background: #fffefe;
+    margin-left: 10px;
+    padding: 10px;
+    border-color: #000000;
+    border-radius: 5px;
+    align-self: flex-end;
+    color: #090909;
+    font-family: sans-serif;
+    font-size: 15px;
+    outline: none;
+}
+form input:focus
+{   
+    border-color: #3498DB;
+}
+h2
+{
+    color: white;
+}
+
+footer h3
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+footer
+{
+    font-family: Verdana;
+    border-color: gray;
+    text-align: center;
+    color:black;
+    font-size: 12px;
+}
+/*---------------------------------------------*/
+@media(max-width: 770px)
+{
+    .barrapad label
+    {
+        display: block;
+        align-self: flex-end;
+    }
+    .barraop
+    {
+        position: absolute;
+        justify-content: stretch;
+        flex-grow: 0;
+        flex-direction: column;
+        background: #16A085;
+        margin-top: -75px;
+        height: auto;
+        width: 150px;
+        transition: all 0.2s;
+    }
+    #bot
+    {
+        margin: 0;
+        border-bottom: none;
+        border-top: 1px solid #FFF;
+        text-align: center;
+    }
+    #bot:hover{
+        background-color: rgba(255,255,255,0.4);
+        border-bottom: none;
+    }
+    #botones3
+    {
+        margin: 0;
+        border-bottom: none;
+        border-top: 1px solid #FFF;
+        text-align: center;
+    }
+    #botones3:hover{
+        background-color: rgba(255,255,255,0.4);
+        border-bottom: none;
+    }
+    #bot-menu:checked ~ .barraop
+    {
+        margin-top: 74px;
+    }
+}
+
+@media(max-width: 450px){
+    form {
+        width: 100%;
+    }
+
+    form input {   
+        width: 70%;
+    }
+    #botones2{
+        margin: 20px auto;
+    }
+}

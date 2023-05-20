@@ -1,0 +1,164 @@
+body{
+	margin:0px;
+    background:white;
+    font-family: Verdana;
+}
+.barrapad{
+	display:flex;
+	background: #16A085;
+}
+
+.barra{
+	margin: 0;
+	width:30%;
+	display:flex;
+	align-items: center;
+}
+.barra2{
+	width: 70%;
+	display:flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.barraop
+{
+	width: 90%;
+	height: 50px;
+	display:flex;
+	flex-grow: 1;
+	justify-content: flex-end;
+}
+.menucon
+{
+	height: 50px;
+	width: auto;
+}
+#bot-menu
+{
+	display: none;
+}
+.barrapad label
+{
+	display: none;
+	width: 50px;
+}
+.barrapad label:hover
+{
+	cursor: pointer;
+	background-color: rgba(255,255,255,0.4);
+}
+
+.logo{
+	margin-left: 20px;
+	height: 50px;
+	width: auto;
+}
+
+#botones{
+	margin-right:10px;
+	outline:none;
+	color: #FFF;
+	text-decoration: none;
+  	border-bottom: solid #DCDCDC 2px;
+	padding: 15px 30px;
+    font-family: Arial,sans-serif;
+    font-size: 15px;
+	transition: 0.2s;
+}
+#botones:hover{
+  	border-bottom: solid #FFF 4px;
+}
+#botones:active{
+  	border: inset #52BE80 4px;
+}
+#botones2{
+	outline:none;
+	color: #FFF;
+	text-decoration: none;
+  	border-bottom: solid #FFF 2px;
+	padding: 10px 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+	transition: 0.2s;
+}
+#botones2:hover{
+  	background: rgba(250,250,250,0.5);
+}
+#botones2:active{
+  	background: rgba(0,0,0,0.5);
+}
+#conpad{
+  	display: flex;
+  	justify-content: flex-start;
+  	width: auto;
+  	height: 80%;
+}
+#menop{
+	background: #FF8F00;
+	width: 20%;
+	height: 34rem;
+	display: flex;
+	flex-direction: column;
+}
+h2{
+	color: white;
+	text-align: center;
+}
+#contener{
+  	height: auto;
+  	width: 80%;
+  	margin: 20px 20px;
+}
+h3
+{
+	text-align: center;
+}
+footer
+{
+	font-family: Verdana;
+	border-color: gray;
+	text-align: center;
+	color:black;
+	font-size: 12px;
+}
+@media(max-width: 883px)
+{
+	.barrapad label
+	{
+		display: block;
+		align-self: flex-end;
+	}
+	.barraop
+	{
+		position: absolute;
+		justify-content: stretch;
+		flex-grow: 0;
+		flex-direction: column;
+		background: #16A085;
+		margin-top: -125px;
+		height: auto;
+		width: 50%;
+		transition: all 0.2s;
+	}
+	#botones
+	{
+		border-bottom: none;
+		border-top: 1px solid #FFF; 
+	}
+	#botones:hover{
+  		background-color: rgba(255,255,255,0.4);
+  		border-bottom: none;
+	}
+	#bot-menu:checked ~ .barraop
+	{
+		margin-top: 120px;
+	}
+	.capsu
+	{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.cab
+	{
+		background-size: cover;
+	}
+}

@@ -1,0 +1,287 @@
+body{
+	margin:0px;
+    background:white;
+    font-family: Verdana;
+}
+.barra{
+	margin: 0;
+	width:30%;
+	display:flex;
+	align-items: center;
+}
+.barra2{
+	width: 70%;
+	display:flex;
+	justify-content: flex-end;
+	align-items: center; s
+}
+.barrapad{
+	display:flex;
+	background: #16A085;
+}
+
+.logo{
+	margin-left: 20px;
+	height: 50px;
+	width: auto;
+}
+body{
+	margin:0px;
+    background:white;
+    font-family: Verdana;
+}
+.barrapad{
+	display:flex;
+	background: #16A085;
+}
+
+.barra{
+	margin: 0;
+	width:30%;
+	display:flex;
+	align-items: center;
+}
+.barra2{
+	width: 70%;
+	display:flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.barraop
+{
+	width: 90%;
+	height: 50px;
+	display:flex;
+	flex-grow: 1;
+	justify-content: flex-end;
+}
+.menucon
+{
+	height: 50px;
+	width: auto;
+}
+#bot-menu
+{
+	display: none;
+}
+.barrapad label
+{
+	display: none;
+	width: 50px;
+}
+.barrapad label:hover
+{
+	cursor: pointer;
+	background-color: rgba(255,255,255,0.4);
+}
+
+.logo{
+	margin-left: 20px;
+	height: 50px;
+	width: auto;
+}
+
+#botones2{
+	margin-right:10px;
+	outline:none;
+	color: #FFF;
+	text-decoration: none;
+  	border-bottom: solid #2980B9 2px;
+	padding: 15px 30px;
+    font-family: Arial,sans-serif;
+    font-size: 15px;
+	transition: 0.2s;
+}
+
+#botones2:hover{
+  	border-bottom: solid #3498DB 4px;
+}
+#botones2:active{
+  	border: inset #52BE80 4px;
+}
+#botones3{
+	margin-right:10px;
+	outline:none;
+	color: #FFF;
+	text-decoration: none;
+  	border-bottom: solid #F1C40F 2px;
+	padding: 15px 30px;
+    font-family:CopaAmerica,sans-serif;
+    font-size: 15px;
+	transition:0.2s;
+}
+#botones3:hover{
+	border-bottom: solid #FFEA00 4px;
+}
+#botones3:active{
+  border: inset #52BE80 4px;
+}
+.cab
+{
+	background-image: url("img/asis.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 90vh;
+	width: 100%;
+}
+#infofon
+{
+	background-color: rgba(28, 40, 51, 0.6);
+	height: 100%;
+	width: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.info
+{
+	width: 50%;
+}
+h2
+{
+	margin-top: 0;
+	font-family: Verdana;
+	font-size: 40px;
+	color: #FFF;
+}
+.font
+{
+	font-family: Verdana;
+	font-size: 20px;
+	color: #EEE;
+	line-height: 30px;
+}
+#infofon img
+{
+	margin: 10px;
+	width: 350px;
+	height: 300px;
+}
+
+footer h3
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+footer
+{
+    font-family: Verdana;
+    border-color: gray;
+    text-align: center;
+    color:black;
+    font-size: 12px;
+}
+/*---------------------------------------------*/
+@media(max-width: 770px)
+{
+	.barrapad label
+	{
+		display: block;
+		align-self: flex-end;
+	}
+	.barraop
+	{
+		position: absolute;
+		justify-content: stretch;
+		flex-grow: 0;
+		flex-direction: column;
+		background: #16A085;
+		margin-top: -75px;
+		height: auto;
+		width: 150px;
+		transition: all 0.2s;
+	}
+	#botones2
+    {
+    	margin: 0;
+        border-bottom: none;
+        border-top: 1px solid #FFF;
+        text-align: center;
+    }
+    #botones2:hover{
+        background-color: rgba(255,255,255,0.4);
+        border-bottom: none;
+    }
+    #botones3
+    {
+    	margin: 0;
+        border-bottom: none;
+        border-top: 1px solid #FFF;
+        text-align: center;
+    }
+    #botones3:hover{
+        background-color: rgba(255,255,255,0.4);
+        border-bottom: none;
+    }
+	#bot-menu:checked ~ .barraop
+	{
+		margin-top: 74px;
+	}
+	#infofon
+	{
+		flex-direction: column;
+		padding: 20px;
+	}
+
+	.cab
+	{
+		height: auto;
+	}
+
+	.info
+	{
+		height: 100%;
+		width: 100%;
+	}
+}
+
+@media(max-width: 370px){
+	#infofon img{
+		width: 95%;
+		height: auto;
+	}
+}
+/*.slider{
+    width: 80%;
+    margin: auto;
+    margin-top: -16px;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite linear;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    height:80%;
+}
+
+
+@keyframes cambio {
+  0%{margin-left: 0;}
+  7.69230769231%{margin-left: 0;}
+  15.3846153846%{margin-left: -100%;}
+  23.0769230769%{margin-left: -100%;}
+  30.7692307692%{margin-left: -200%;}
+  38.4615384615%{margin-left: -200%;}
+  46.1538461538%{margin-left: -300%;}
+  53.8461538462%{margin-left: -300%;}
+  61.5384615385%{margin-left: -200%;}
+  69.2307692308%{margin-left: -200%;}
+  76.9230769231%{margin-left: -100%;}
+  84.6153846154%{margin-left: -100%;}
+  92.3076923077%{margin-left: 0;}
+  100%{margin-left: 0;}
+}
+
+
+
+*/
